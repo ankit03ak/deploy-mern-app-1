@@ -23,7 +23,7 @@ function Home() {
 
   const fetchProducts = async () => {
     try {
-      const url = 'https://deploy-mern-app-1-ui3.onrender.com/products';
+      const url = 'https://deploy-mern-app-1-api4.onrender.com/products';
       const token = localStorage.getItem('token');
       const headers = {
         headers : {
