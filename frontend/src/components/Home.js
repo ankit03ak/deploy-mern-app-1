@@ -40,15 +40,6 @@ function Home() {
     }
   }
 
-    const [date, setDate] = useState();
-    const now = new Date();
-    const time = now.toLocaleTimeString()
-    
-    
-    // console.log(time);
-    setInterval(() => {
-        setDate(time);
-    }, 1000);
 
 
   useEffect(() => {
@@ -58,8 +49,6 @@ function Home() {
   return (
     <div>
       <h1>Welcome {loggedInUser}</h1>
-
-      <button style={{color : 'yellow', marginLeft : '20px'}}> <h3> {time} </h3></button>
 
       <br />
 

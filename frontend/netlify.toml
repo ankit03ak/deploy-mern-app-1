@@ -1,0 +1,9 @@
+[build]
+  base = "frontend"   # Directory containing package.json
+  publish = "frontend/build"   # Directory where build output is located
+  command = "npm run build"   # Command to build the project
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
